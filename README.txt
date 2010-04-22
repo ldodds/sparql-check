@@ -1,6 +1,12 @@
 A reworking of the Schemarama 2 code originally developed by Alistair Miles.
 
+Original version is available from:
+
+http://isegserv.itd.rl.ac.uk/schemarama/
+
 This version provides a simple command-line interface for running tests against a dataset.
+
+http://github.com/ldodds/sparql-check
 
 BUILDING
 
