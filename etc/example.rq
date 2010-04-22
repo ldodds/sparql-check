@@ -1,0 +1,14 @@
+PREFIX sch: <http://purl.org/net/schemarama#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+CONSTRUCT {
+  [] a sch:Error;
+    sch:message "People should have names";
+    sch:implicated ?x.
+} WHERE {
+  ?x a foaf:Person.
+  OPTIONAL {
+    ?x foaf:name ?name.
+  }
+  FILTER ( !bound(?name) )
+}

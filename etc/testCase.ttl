@@ -1,0 +1,19 @@
+@prefix sch: <http://purl.org/net/schemarama#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+
+<http://example.org/testcase> a sch:TestCase;
+  dc:title "Example Test Case";
+  dc:description "A simple example test case";
+  sch:groups ( _:group1 ).
+  
+  
+_:group1 a sch:TestGroup;
+  dc:title "Test Group";
+  dc:description "Test Group Description";
+  sch:tests ( <file:example.rq> ).
+  
+<file:example.rq> a sch:Test;
+  dc:title "Name Test";
+  dc:description "Tests for foaf names".
+  
+  

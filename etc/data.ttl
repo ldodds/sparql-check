@@ -1,0 +1,8 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+<http://www.example.org/person/ok> a foaf:Person;
+	foaf:name "I'm ok".
+	
+<http://www.example.org/person/not-ok> a foaf:Person.	
+	
+	
