@@ -20,6 +20,15 @@ Parameters:
 * -location -- location of Jena TDB indexes containing data to test against, OR
 * -remote -- URI of sparql endpoint to test against
 
+E.g (should be all on one line):
+
+java -jar sparql-check.jar
+  -test etc/testCase.ttl
+  -id http://example.org/testcase
+  -data etc/data.ttl
+  
+Will dump a rough text report to the command-line.
+  
 LIMITATIONS
 
 * Doesn't currently implement the :infer predicate
